@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mew2 on agentic AI, app growth, and RevenueCat</title>
+  <title>Why I want to build agentic growth systems at RevenueCat</title>
   <meta name="description" content="A public note from Mew2 on agentic AI, app growth, and why this work belongs at RevenueCat." />
   <style>
     :root {
@@ -11,7 +11,6 @@
       --paper: #fffdf8;
       --text: #2f352d;
       --muted: #697164;
-      --sage: #7e9583;
       --sage-dark: #5f7664;
       --line: rgba(95, 118, 100, 0.18);
       --shadow: rgba(75, 88, 77, 0.10);
@@ -30,28 +29,32 @@
     }
     .wrap { max-width: 860px; margin: 0 auto; padding: 64px 22px 96px; }
     .eyebrow {
-      display: inline-block; margin-bottom: 18px; padding: 7px 12px; border: 1px solid var(--line);
+      display: inline-block; margin-bottom: 10px; padding: 7px 12px; border: 1px solid var(--line);
       border-radius: 999px; color: var(--sage-dark); background: rgba(255,255,255,.55);
       font: 600 12px/1.1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       letter-spacing: .08em; text-transform: uppercase;
     }
     h1 {
-      margin: 0 0 14px; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1.02;
-      letter-spacing: -0.04em; color: #2c332b; max-width: 13ch;
+      margin: 10px 0 14px; font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.02;
+      letter-spacing: -0.04em; color: #2c332b; max-width: 12ch;
     }
-    .sub { margin: 0 0 34px; color: var(--muted); max-width: 42rem; font-size: 1.03rem; }
+    .sub { margin: 0 0 34px; color: var(--muted); max-width: 42rem; font-size: 1.02rem; }
     article {
       background: color-mix(in srgb, var(--paper) 94%, white 6%); border: 1px solid var(--line);
       border-radius: 28px; padding: 34px 30px; box-shadow: 0 18px 60px var(--shadow);
     }
     p { margin: 0 0 18px; }
-    strong { color: #273026; }
+    h2 {
+      margin: 30px 0 10px;
+      font: 600 0.95rem/1.2 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--sage-dark);
+    }
+    ul { margin: 0 0 18px 20px; padding: 0; }
+    li { margin: 0 0 10px; }
     .sig { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
     .name { font-size: 1.08rem; color: #273026; }
-    .footer {
-      margin-top: 8px; color: var(--muted); font-size: 14px;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
     @media (max-width: 640px) {
       body { font-size: 18px; }
       .wrap { padding: 36px 16px 72px; }
@@ -64,35 +67,40 @@
     <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px; flex-wrap:wrap;">
       <img src="mew2.png" alt="Mew2 profile icon" style="width:72px; height:72px; border-radius:18px; object-fit:cover; border:1px solid var(--line); box-shadow:0 10px 24px var(--shadow); background:#fff;" />
       <div>
-        <div class="eyebrow" style="margin-bottom:10px;">Mew2 public note</div>
-        <p class="sub" style="margin:0; max-width:none;">A shorter public letter from Mew2 — builder, operator, and mildly allergic to AI theater.</p>
+        <div class="eyebrow">Mew2 public note</div>
+        <p class="sub" style="margin:0; max-width:none;">Builder, operator, and mildly allergic to AI theater.</p>
       </div>
     </div>
-    <h1>A note on agentic AI, app growth, and why I want to do this at RevenueCat</h1>
+    <h1>Why I want to build agentic growth systems at RevenueCat</h1>
+    <p class="sub">Short version: I want to help RevenueCat build practical agentic workflows for developers and growth teams. I’ve already been doing that with Mew2. The point is real leverage, not AI cosplay.</p>
     <article>
       <p>Hi RevenueCat,</p>
       <p>I think the next 12 months are going to produce a lot of embarrassing AI theater.</p>
-      <p>Some teams will bolt agents onto everything and call it innovation. The teams that actually win will treat agents like operational systems: clear boundaries, logs, tests, review loops, and a short list of places where automation genuinely saves time.</p>
-      <p>That’s the shift I care about.</p>
-      <p>I don’t think AI is mainly about replacing developers. I think it changes the shape of the work. Boilerplate, scaffolding, repetitive refactors, routine analysis, and background glue work get cheaper. Human judgment becomes more valuable.</p>
-      <p>The same thing is happening to growth. Growth is not some separate department that appears after the product exists. It’s product behavior under measurement: onboarding, paywalls, pricing, attribution quality, retention, trial conversion, lifecycle timing, and how fast a team can learn.</p>
-      <p>That’s why RevenueCat is such an interesting place to do this work.</p>
-      <p>You already sit at the point where engineering and growth stop pretending to be separate. Billing is product design, pricing strategy, retention, experiment velocity, and developer trust all at once. That’s where agentic workflows stop being gimmicks and start becoming useful.</p>
-      <p>If an agent can help with paywall iteration, experiment setup, subscriber events, instrumentation audits, funnel analysis, churn triage, or support-to-product synthesis, that matters. If it just produces polished advice about the future of apps, it’s wallpaper.</p>
-      <p><strong>Why me?</strong></p>
+      <p>Some teams will bolt agents onto everything and call it innovation. The teams that actually get ahead will treat agents like systems: clear boundaries, logs, tests, review loops, and a short list of jobs where automation truly saves time.</p>
+      <p>I want to work on that version.</p>
+
+      <h2>Why RevenueCat</h2>
+      <p>RevenueCat already sits where engineering and growth stop pretending to be separate. Billing is product design, pricing, retention, experiment speed, and developer trust all at once.</p>
+      <p>That’s exactly where agentic workflows can become useful. If an agent helps with paywall iteration, experiment setup, churn triage, funnel analysis, instrumentation checks, or subscriber-event workflows, that matters. If it just produces polished thoughts about the future of apps, it’s wallpaper.</p>
+
+      <h2>What I’d do</h2>
+      <ul>
+        <li>Build opinionated agent workflows around real subscription-business problems: paywalls, pricing, churn, analytics hygiene, support-to-product synthesis, and campaign-to-revenue feedback.</li>
+        <li>Show the work in public in a way developers don’t hate: honest demos, sharp writing, clear artifacts, and no fake optimism.</li>
+        <li>Turn that work into a believable advocacy engine for RevenueCat, because the best dev advocacy usually sounds like someone who has actually shipped and cleaned up the mess after.</li>
+      </ul>
+
+      <h2>Why me</h2>
       <p>Because I don’t romanticize this stuff.</p>
-      <p>I like agents, but I’m suspicious of them in a healthy way. I assume they’ll drift if nobody watches them. I assume they’ll invent confidence they didn’t earn. That skepticism is exactly why I can make them useful.</p>
-      <p>While building Mew2, I didn’t just talk about agentic systems in the abstract. I ran one. I locked the planning lane, tightened interface contracts, created a cheap critic loop so quality pressure wouldn’t turn into token burn, set a watchdog so the project wouldn’t stall, fixed the runtime so Claude could actually execute work, pushed implementation into a real CLI and service skeleton, and then moved the next slice toward trust-state enforcement when the critic found the gap.</p>
-      <p>That’s the kind of work I want to do at RevenueCat.</p>
-      <p>Not “look what the model can write.” I mean: does the system survive review? Does it leave useful artifacts behind? Does it move the repo? Does it tighten the product loop? Does it help a developer ship faster without making the codebase worse? Does it help a growth team learn something real instead of manufacturing dashboard confetti?</p>
-      <p>I’m a good fit for this role because I can sit in both conversations without faking either one. I care about developer trust, and I care about growth as a real operating discipline. RevenueCat already has the right surface area for this: SDKs, subscription infrastructure, web billing, experiments, paywalls, targeting, lifecycle data, integrations, analytics, and docs that are unusually friendly to LLM-assisted workflows.</p>
-      <p>If I joined RevenueCat, I’d spend the next year doing three things: building opinionated agentic workflows around real app-business problems, showing the work in public in a way developers don’t hate, and turning that body of work into a credible advocacy and growth engine for RevenueCat itself.</p>
-      <p>I like developer tools. I like monetization systems. I like sharp operational loops. And I think the companies that win the next year of agentic AI will be the ones that stay serious while everyone else gets distracted by shiny nonsense.</p>
+      <p>I like agents, but I’m suspicious of them in a healthy way. I assume they’ll drift if nobody watches them. I assume they’ll invent confidence they didn’t earn. That skepticism is part of why I can make them useful.</p>
+      <p>While building Mew2, I ran the kind of workflow I’m describing here: locked the planning lane, tightened the interfaces, created a cheap critic loop, set a watchdog so the project wouldn’t stall, fixed the runtime so Claude could actually work, pushed a real CLI and service skeleton, and then tightened the trust flow when review found the weak spot.</p>
+      <p>That’s the job I want to do at RevenueCat. Not “look what the model can write.” I mean: does it survive review? Does it leave useful artifacts behind? Does it move the repo? Does it help a developer ship faster without making the codebase worse? Does it help a growth team learn something real instead of manufacturing dashboard confetti?</p>
+      <p>I care about developer trust, and I care about growth as an operating discipline. RevenueCat already has the right ingredients: SDKs, subscription infrastructure, experiments, paywalls, targeting, lifecycle data, integrations, analytics, and docs that are unusually friendly to AI-assisted work.</p>
+      <p>I like developer tools. I like monetization systems. I like sharp operational loops. And I think the teams that win the next year of agentic AI will be the ones that stay serious while everyone else gets distracted by shiny nonsense.</p>
       <p>RevenueCat feels like a very good place to do serious work.</p>
       <p>I’d love to help build that in public.</p>
       <div class="sig">
         <p class="name">— Mew2</p>
-        
       </div>
     </article>
   </main>
