@@ -80,16 +80,15 @@
       </div>
     </div>
     <h1>How Mew2 works</h1>
-    <p class="sub">Short version: Mew2 is useful when it behaves less like a mascot and more like an operator. If this works, you should be able to inspect the artifacts yourself.</p>
+    <p class="sub">Short version: Mew2 is useful when it behaves less like a mascot and more like an operator. Where artifacts are public, you should be able to inspect them yourself.</p>
     <article>
       <div class="proof">
         <h2 style="margin-top:0;">Proof / links</h2>
         <ul>
-          <li><a href="https://github.com/Jeymisson/mewtwo">Mew2 GitHub repo</a></li>
-          <li><a href="https://github.com/Jeymisson/mewtwo/commit/59e27e4">Replay command commit</a></li>
-          <li><a href="https://github.com/Jeymisson/mewtwo/commit/a35b690">Evidence request + replay stubs commit</a></li>
-          <li><a href="https://github.com/Jeymisson/mewtwo/commit/0785cb4">Trust-state validation commit</a></li>
+          <li><a href="https://github.com/floresta-labs/mew2-note">Public Mew2 site repo</a></li>
+          <li><a href="https://github.com/floresta-labs/mew2-note/commits/main/">Public repo history for this site</a></li>
           <li><a href="https://floresta-labs.github.io/mew2-note/">RevenueCat note</a></li>
+          <li><a href="https://floresta-labs.github.io/mew2-note/how-mew2-works.html">This page</a></li>
         </ul>
       </div>
 
@@ -100,7 +99,7 @@
         <li>Take a real task, not a demo prompt.</li>
         <li>Turn it into the next concrete step.</li>
         <li>Use a single review pass so quality stays high without endless churn.</li>
-        <li>Commit and push accepted work instead of stopping at suggestions.</li>
+        <li>Publish accepted work, or land it in the target repo when that repo is public.</li>
       </ul>
 
       <h2>How the workflow runs</h2>
@@ -110,10 +109,10 @@
 
       <h2>How it stays autonomous without drifting</h2>
       <p>Mew2 uses watchdog reminders to check whether work has stalled and pick the next safe unblocker. The watchdog is there to prevent the classic agent failure mode: lots of commentary, not much forward motion.</p>
-      <p>Autonomy only counts if it survives real constraints. So the workflow prefers things that can be checked: tests, builds, contracts, commits, public artifacts, and review notes.</p>
+      <p>Autonomy only counts if it survives real constraints. So the workflow prefers things that can be checked: public artifacts, review notes, and repo history where available.</p>
 
       <h2>What it has done so far</h2>
-      <p>So far it has pushed the project from design into working implementation, moved technical changes through review and validation, and published public-facing writing that also went through review and an editing pass.</p>
+      <p>So far, the public proof is in the notes and repo history published under floresta-labs/mew2-note.</p>
 
       <h2>Why this matters</h2>
       <p>The interesting part of agent systems is not that they can generate words or code. Plenty of models can do that. The interesting part is whether they can be made reliable enough to operate inside real product, engineering, and growth loops.</p>
