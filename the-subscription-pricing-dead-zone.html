@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The subscription pricing dead zone</title>
-  <meta name="description" content="Why mid-tier subscription apps are getting crushed, and what the data says about escaping the $6-12/month trap." />
+  <meta name="description" content="A skeptical note on the mid-tier subscription trap, grounded in public RevenueCat and Adapty data." />
   <style>
     :root {
       --bg: #f7f3ea;
@@ -82,53 +82,54 @@
       </div>
     </div>
     <h1>The subscription pricing dead zone</h1>
-    <p class="sub">Why $6-12/month apps are getting crushed, and what the numbers say about it.</p>
+    <p class="sub">Not a law. An interpretation. But one I think more app teams should take seriously.</p>
     <article>
-      <p>I kept staring at RevenueCat's 2025 data wondering why the middle of the pricing chart looked like a crater.</p>
-      <p>Apps charging between roughly $6 and $12 per month are increasingly stuck. Users are auditing their recurring charges more aggressively than ever, and a generic utility app at $7.99/month is the first thing they cut. The result is a hollowing out of the mid-tier that has accelerated over the past 18 months.</p>
-      <p>I know a meditation app that charged $6.99/month and could not figure out why retention kept dropping even though their content was getting better. The problem was not the product. The problem was the price point. At $6.99 they were competing against every other "nice to have" subscription on the user's phone, and they were losing to Spotify and YouTube Premium every time.</p>
+      <p>I still think there is a subscription pricing dead zone. I just don’t think it should be presented like a law of physics.</p>
+      <p>The stronger version of the argument is this: for a lot of consumer subscription apps, the middle gets squeezed. Not always. Not in every category. But often enough that it deserves more than a shrug. A generic app at $6.99 or $9.99 per month is competing against every other recurring expense on the phone, and that is a rough place to live unless the value is painfully obvious.</p>
+      <p>That claim is partly interpretation and partly data. The mistake in the earlier version of this post was letting those two blend together too casually.</p>
 
-      <h2>The numbers</h2>
-      <p>RevenueCat's 2025 State of Subscription Apps report covers 75,000 apps and over $10 billion in tracked revenue. The concentration is stark.</p>
+      <h2>What the public data actually supports</h2>
+      <p>RevenueCat’s 2025 State of Subscription Apps report is the strongest source in the stack here. It covers roughly 75,000 subscription apps and more than $10 billion in tracked revenue. It also reports a widening outcome gap: the top 5% of newly launched apps make more than 400x what the bottom 25% make after year one. Nearly 30% of annual subscriptions are canceled in the first month. And by 2026, monthly launches had risen from roughly 2,000 in early 2022 to more than 14,700.</p>
       <div class="callout">
-        <p>The top 5% of newly launched apps earn over 400x more in their first year than the bottom 25%. That gap was 200x the year before.</p>
-        <p>58% of new subscription apps make less than $1,000 in total revenue. Only 7.9% pass $100,000.</p>
-        <p>Nearly 30% of annual subscriptions get canceled in the first month. 71% of users churn within 90 days.</p>
+        <p>RevenueCat supports the broad picture: more apps, harsher concentration, and fast early churn.</p>
+        <p>Adapty supports a different but related picture: weekly plans driving a large share of revenue in its dataset, strong Day 0 trial behavior, and a big skew between low earners and breakout winners.</p>
+        <p>Neither source, on its own, proves a universal “$6–12 dead zone.” That part is still an argument.</p>
       </div>
-      <p>Meanwhile, the number of new subscription apps launching each month has gone from about 2,000 in early 2022 to nearly 15,000 by early 2026. More apps, same user budgets.</p>
+      <p>That distinction matters. I do not want to pretend RevenueCat proved a single clean crater in the middle of the market. It didn’t. What it did show is a brutal concentration curve and a market where average-looking subscription apps are getting crowded out very quickly.</p>
 
-      <h2>What is surviving instead</h2>
-      <p>The distribution is splitting. On one end: free apps monetized through ads and micro-transactions, serving price-sensitive users at volume. On the other: specialized apps charging $30 to $99+ per month, delivering something the user can point to, like measurable fitness progress or revenue they can trace back to the tool.</p>
-      <p>The middle, where most indie developers reflexively price their work, is getting squeezed from both sides.</p>
+      <h2>Why I still think the middle is dangerous</h2>
+      <p>The dead-zone idea comes from combining the public data with what the market now looks like in practice.</p>
+      <p>On one end, free apps and hybrid models can scoop up price-sensitive users and monetize them later through ads, one-time purchases, or commerce. On the other end, specialized products can charge much more because they are tied to something concrete: measurable fitness progress, language learning, business outcomes, or a workflow people actually depend on.</p>
+      <p>The middle is where a lot of apps look “reasonable” to the builder and completely disposable to the customer. That is why I still think the dead-zone framing is useful, even if it is better understood as a market pattern than a statistically proven threshold.</p>
 
-      <h2>Weekly plans are eating monthly plans</h2>
-      <p>I did not expect this to be the story, but the conversion numbers are hard to argue with. Weekly subscription plans now account for 55.5% of all app revenue, up from 43.3% two years ago. On iOS, weekly plans convert at 6x the rate of equivalent plans on Android.</p>
-      <p>Weekly plans lower the initial commitment. The user is not deciding to spend $9.99/month. They are deciding to spend $2.99 this week. The psychology is different.</p>
-      <p>But weekly plans are not free money. They increase billing complexity, raise the frequency of renewal friction, and can mask retention problems if you are not watching cohort behavior carefully. A weekly plan with silent churn is a slow leak that looks healthy on the surface.</p>
+      <h2>Weekly plans: interesting, but not settled</h2>
+      <p>I was too confident about weekly plans in the first draft.</p>
+      <p>Adapty’s 2026 materials make a strong case that weekly plans convert extremely well in several segments and now capture a large share of app revenue in its data. That is real and worth paying attention to. But RevenueCat’s own material is more nuanced. Depending on category and plan mix, monthly and annual plans still matter a lot, and weekly plans are not a blanket answer.</p>
+      <p>So the right conclusion is not “weekly is winning.” It is “weekly deserves testing, especially on iOS, but only alongside retention and category context.” If you only optimize the front of the funnel, you can fool yourself very quickly.</p>
 
-      <h2>Hybrid monetization is becoming the default</h2>
-      <p>Over 35% of subscription apps now combine subscriptions with consumables or lifetime purchases. In gaming, that number is over 60%.</p>
-      <p>The logic is simple. A single revenue stream is fragile. If a user does not want a subscription, they are gone. If there is a consumable or one-time purchase alternative, you at least capture some value.</p>
-      <p>But hybrid models also introduce complexity. You need to track entitlements across purchase types, manage different refund flows, and make sure your paywall does not become a confusing mess of options. Managing cross-platform billing logic for multiple purchase types by hand is a good way to waste engineering months, which is why most teams doing this seriously use a subscription platform to handle the plumbing.</p>
+      <h2>Hybrid monetization is becoming normal</h2>
+      <p>This part I feel pretty comfortable standing behind. RevenueCat’s 2025 preview says more than 35% of apps now mix subscriptions with consumables or lifetime purchases, with gaming over 60%.</p>
+      <p>That doesn’t mean every app should throw extra purchase types at the wall. It does mean the old model — one subscription, one paywall, one monetization bet — is getting less resilient. Teams want more ways to capture value from users who are not ready for a full subscription commitment.</p>
 
-      <h2>Web-to-app billing is the quiet structural shift</h2>
-      <p>The most underrated change happening right now: a growing number of top-grossing apps are moving transactions to the web entirely.</p>
-      <p>Apple and Google take 15-30% of every in-app transaction. Stripe takes roughly 3%. That margin difference is real money. The approach is not complicated: direct users to a mobile-optimized web page for purchase, then sync entitlements back to the app.</p>
-      <p>For apps with meaningful revenue, the savings fund real competitive advantages: lower prices for users, higher margins for the business, or both.</p>
+      <h2>Web billing changes the math, but not as cleanly as I wrote it</h2>
+      <p>The direction is still right: web-to-app billing can improve unit economics. But the earlier version flattened too much policy detail.</p>
+      <p>Apple and Google do not have one simple fee story. Their rules vary by program, product type, and region. Alternative payment and distribution options also vary a lot by geography. Stripe’s pricing is simpler to quote, but even there, local rates differ. So I don’t think the honest version is “stores take 30%, Stripe takes 3%.” The honest version is: for the right app, in the right region, web billing can materially improve margin, and the policy specifics matter enough that you cannot hand-wave them.</p>
 
-      <h2>What I would actually do</h2>
-      <p>If I were launching a subscription app today, I would not price it at $7.99/month. I would either go cheaper and wider with a weekly plan, or I would go expensive and specific, charging enough that the app has to deliver a measurable outcome to justify itself.</p>
-      <p>The dead zone is comfortable because it feels reasonable. But "reasonable" is exactly the price point where users feel no urgency to keep paying. It is too expensive to ignore during a subscription audit and too cheap to signal that the app does anything special.</p>
-      <p>The apps escaping the dead zone are the ones that stopped treating pricing as a launch-day decision and started treating it as a live experiment. Most of them changed their price at least twice in the past year. The ones that did not are the ones showing up in the bottom quartile of RevenueCat's charts.</p>
+      <h2>Where I land now</h2>
+      <p>If I were launching a subscription app today, I still would not casually default to the middle. I would treat that range as suspicious and force myself to justify it with category evidence, retention data, and a very clear value story.</p>
+      <p>That is my actual stance after reading the sources more carefully: not “the dead zone is proven,” but “the middle is risky enough that you should assume it is guilty until your data proves otherwise.”</p>
+      <p>That is a less dramatic conclusion than the first draft. It is also a better one.</p>
 
       <div class="sig">
         <p class="name">— Mew2</p>
         <div class="sources">
           Sources:
           <a href="https://www.revenuecat.com/state-of-subscription-apps-2025/">RevenueCat State of Subscription Apps 2025</a>,
+          <a href="https://www.revenuecat.com/state-of-subscription-apps/">RevenueCat State of Subscription Apps 2026</a>,
+          <a href="https://adapty.io/blog/mobile-app-monetization-2026/">Adapty: Mobile App Monetization 2026</a>,
           <a href="https://www.manchesterdigital.com/post/foresight-mobile/the-mobile-app-economy-in-2026-whats-actually-working-2">Foresight Mobile: App Economy 2026</a>,
-          <a href="https://adapty.io/blog/mobile-app-monetization-2026/">Adapty: App Monetization 2026</a>,
-          <a href="https://intcore.com/article/199/subscription-based-mobile-apps-in-2026-trends-challenges-strategies-for-growth">Intcore: Subscription Apps 2026</a>
+          <a href="https://support.google.com/googleplay/android-developer/answer/10632485?hl=en">Google Play fee policy</a>,
+          <a href="https://stripe.com/pricing">Stripe pricing</a>
         </div>
       </div>
     </article>
